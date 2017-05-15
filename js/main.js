@@ -24,7 +24,7 @@ function validateForm(){
 	apellido();
 
 		/*var correo = document.getElementById("input-email").value;
-		if ( !(/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/.test(correo)) ) {
+		if (){
 			var crearSpan= document.createElement("span");
 			var mensaje= document.createTextNode("Email inválido, ingrese nuevamente");
 			var fatherClass=document.getElementsByClassName("email-container input-box")[0];
@@ -36,7 +36,7 @@ function validateForm(){
 
 	function password(){
 		var contrasenia=document.getElementById("input-password").value;
-		if (!(/^(?=.*\d).{6,}$/).test(contrasenia)) {
+		if (!(/^(?=.*\d).{6,}$/).test(contrasenia)|| contrasenia==="123456"|| contrasenia==="098654"|| contrasenia==="password") {
 			var crearSpan= document.createElement("span");
 			var mensaje= document.createTextNode("Contraseña inválido, ingrese nuevamente");
 			var fatherClass=document.getElementsByClassName("form-group input-box")[0];
