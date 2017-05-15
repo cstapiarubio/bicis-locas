@@ -23,8 +23,9 @@ function validateForm(){
 	}
 	apellido();
 
-		/*var correo = document.getElementById("input-email").value;
-		if (!(/^(?:[^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*|"[^\n"]+")@(?:[^<>()[\].,;:\s@"]+\.)+[^<>()[\]\.,;:\s@"]{2,63}$/i).test(correo)){
+	function correo() {  
+		var correo = document.getElementById("input-email").value;
+		if (!(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/).test(correo)){
 			var crearSpan= document.createElement("span");
 			var mensaje= document.createTextNode("Email inválido, ingrese nuevamente");
 			var fatherClass=document.getElementsByClassName("email-container input-box")[0];
@@ -32,7 +33,8 @@ function validateForm(){
 			fatherClass.appendChild(crearSpan);
 		}
 	}
-	correo();*/
+	
+	correo();
 
 	function password(){
 		var contrasenia=document.getElementById("input-password").value;
@@ -59,5 +61,6 @@ function validateForm(){
 	}
 }
 opciones();
+
 }
 
